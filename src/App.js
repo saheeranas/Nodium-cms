@@ -5,14 +5,16 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div>
+        <div>
+          <div className="login-wrapper">
+            <form>
+              <input type="text" className="text-field" placeholder="Username" />
+              <input type="text" className="text-field" placeholder="Password" />
+              <input type="submit" value="Login" />
+            </form>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
