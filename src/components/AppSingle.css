@@ -1,0 +1,81 @@
+.dash-left{
+  width: 20%;
+  height: 1000px;
+  background: #212121;
+  float: left;
+}
+.dash-right{
+  width: 80%;
+  height: 1000px;
+  background: #f7f7f7;
+  float: right;
+  padding: 15px 0px;
+}
+
+@media screen and (max-width: 991px) {
+  .dash-left{ width:22%; }
+  .dash-right{ width:78%; }
+}
+
+.as-icon-wrp{
+  width: 100%;
+  background: #aaa;
+  height: 80px;
+  text-align: center;
+}
+.as-icon-wrp img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+ul.dash-menu{
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  float: left;
+}
+ul.dash-menu li{
+  width: 100%;
+  padding: 10px 15px;
+  color: #dad7d7;
+  font-size: 15px;
+}
+
+.dash-right-in{
+  width: 96%;
+  height: 100%;
+  float: none;
+  margin: auto;
+  background: #fff;
+  padding: 15px;
+}
+ul.as-appname{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+ul.as-appname li{
+  display: inline-block;
+  font-size: 14px;
+  color: #7d7d7d;
+}
+ul.as-appname li::before {
+  content: "/";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ul.as-appname li:first-child::before{
+  content: "";
+  padding: 0;
+}
+
+.asTabs-wrp{
+  width: 100%;
+  float: left;
+  margin-top: 35px;
+}

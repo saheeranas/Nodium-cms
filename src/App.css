@@ -4,6 +4,11 @@
 
 body {
   margin: 0;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 .login-wrapper {
@@ -27,5 +32,38 @@ body {
   padding: 5px;
   margin: 5px 0;
   display: inline-block;
+  clear: both;
+  border: 1px solid #a7a7a7;
+}
+
+.text-area {
+  width: 100%;
+  padding: 5px;
+  height: 80px;
+  resize: none;
+  margin: 5px 0;
+  display: inline-block;
+  clear: both;
+  border: 1px solid #a7a7a7;
+}
+
+.button-submit {
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #fff;
+  background: green;
+  border-radius: 2px;
+  border: none;
+  padding: 5px 0;
+}
+
+/* Common Styles */
+.wrapper{
+  width: 100%;
+  float: left;
+}
+.clear{
+  display: block;
   clear: both;
 }
