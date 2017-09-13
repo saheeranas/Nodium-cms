@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import App from './App';
 import ListApps from './components/ListApps';
 import AppSingle from './components/AppSingle';
+import PostSingle from './components/PostSingle';
 
 ReactDOM.render(
   <Router>
@@ -14,6 +15,7 @@ ReactDOM.render(
       <Route exact path="/" component={App} />
       <Route path="/list-apps" component={ListApps} />
       <Route path="/app-single" component={AppSingle} />
+      <Route path="/post-single" component={PostSingle} />
     </div>
   </Router>, document.getElementById('root'));
 registerServiceWorker();

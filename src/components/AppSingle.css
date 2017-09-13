@@ -1,8 +1,13 @@
 .dash-left{
   width: 20%;
-  height: 1000px;
+  height: 100%;
+  overflow-y: auto;
   background: #212121;
   float: left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 .dash-right{
   width: 80%;
@@ -15,6 +20,11 @@
 @media screen and (max-width: 991px) {
   .dash-left{ width:22%; }
   .dash-right{ width:78%; }
+}
+
+.dash-left-in{
+  width: 100%;
+  float: left;
 }
 
 .as-icon-wrp{
@@ -53,11 +63,13 @@ ul.dash-menu li{
   background: #fff;
   padding: 15px;
 }
+
 ul.as-appname{
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: left;
+  float: left;
 }
 ul.as-appname li{
   display: inline-block;
@@ -74,8 +86,68 @@ ul.as-appname li:first-child::before{
   padding: 0;
 }
 
+.button-newPost{
+  float: right;
+  border: none;
+  background: green;
+  color: #fff;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.button-newPost:hover{
+  background: #0cc10c;
+}
+
 .asTabs-wrp{
   width: 100%;
   float: left;
   margin-top: 35px;
+}
+
+.asTabs-wrp .react-tabs__tab-list{
+  list-style: none;
+  padding-left: 0;
+}
+.asTabs-wrp .react-tabs__tab-list .react-tabs__tab{
+  display: inline-block;
+  color: blue;
+}
+.asTabs-wrp .react-tabs__tab-list .react-tabs__tab--selected{
+  color: #000;
+}
+.asTabs-wrp .react-tabs__tab-list .react-tabs__tab::before {
+  content: "|";
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.asTabs-wrp .react-tabs__tab-list .react-tabs__tab:first-child::before {
+  content: " ";
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.asPost-wrp{
+  width: 100%;
+  float: left;
+}
+.asPost-row{
+  width: 100%;
+  float: left;
+  border: 1px solid #ccc;
+}
+.asPost-left{
+  width: 15%;
+  display: table-cell;
+  background: #aaa;
+}
+.asPost-right{
+  width: 85%;
+  display: table-cell;
+  padding: 15px;
+}
+
+.asPost-row h2{
+  font-size: 18px;
+  font-weight: bold;
 }
