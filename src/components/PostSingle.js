@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './PostSingle.css';
 import AppIcon from '../img/appicon-sample.png';
 import ReactQuill from 'react-quill';
@@ -32,7 +31,7 @@ class PostSingle extends Component {
           <div className="dash-left">
             <div className="dash-left-in">
               <div className="as-icon-wrp">
-                <img src={AppIcon} />
+                <img src={AppIcon} alt="" />
               </div>
               <ul className="dash-menu">
                 <li>Settings</li>

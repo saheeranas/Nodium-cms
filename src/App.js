@@ -16,7 +16,6 @@ class App extends Component {
 
   render() {
     return (
-      <div>
         <div>
           <div className="login-wrapper">
             <form onSubmit={this.handleSubmit}>
@@ -26,7 +25,6 @@ class App extends Component {
             </form>
           </div>
         </div>
-      </div>
     );
   }
 }

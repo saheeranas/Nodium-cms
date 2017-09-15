@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import './ListApps.css';
 import AppIcon from '../img/appicon-sample.png';
 import Modal from 'react-modal';
@@ -53,25 +52,25 @@ class ListApps extends Component {
         <div className="wrapper">
           <ul className="la-grid-wrp">
             <li>
-              <img src={AppIcon} />
+              <img src={AppIcon} alt="" />
               <h3>App name</h3>
               <p>13 Posts</p>
               <p>2 Drafts</p>
             </li>
             <li>
-              <img src={AppIcon} />
+              <img src={AppIcon} alt="" />
               <h3>App name</h3>
               <p>13 Posts</p>
               <p>2 Drafts</p>
             </li>
             <li>
-              <img src={AppIcon} />
+              <img src={AppIcon} alt="" />
               <h3>App name</h3>
               <p>13 Posts</p>
               <p>2 Drafts</p>
             </li>
             <li>
-              <img src={AppIcon} />
+              <img src={AppIcon} alt="" />
               <h3>App name</h3>
               <p>13 Posts</p>
               <p>2 Drafts</p>
