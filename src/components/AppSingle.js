@@ -1,41 +1,35 @@
 import React, { Component } from 'react';
 import './AppSingle.css';
-import AppIcon from '../img/appicon-sample.png';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-//import ReactPaginate from 'react-paginate';
+import { Menu, Button } from 'semantic-ui-react'
+import MenuExampleVertical from './VerticalMenu';
 
 class AppSingle extends Component {
+
+  state = {
+    activePagination: '1'
+  }
 
   constructor(props) {
     super(props);
     this.handleBtnNew = this.handleBtnNew.bind(this);
   }
 
+  paginationClick = (e, { name }) => this.setState({ activePagination: name })
+
   handleBtnNew() {
     this.props.history.push('/post-single');
   }
 
   render() {
+
+    const { activePagination } = this.state
+
     return(
       <div>
         <div className="wrapper">
 
-          <div className="dash-left">
-            <div className="dash-left-in">
-              <div className="as-icon-wrp">
-                <img src={AppIcon} alt="" />
-              </div>
-              <ul className="dash-menu">
-                <li>Settings</li>
-                <li>API Details</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-                <li>Item 6</li>
-                <li>Item 7</li>
-              </ul>
-            </div>
-          </div>
+          <MenuExampleVertical />
 
           <div className="dash-right">
             <div className="dash-right-in">
@@ -128,6 +122,19 @@ class AppSingle extends Component {
 
                   </TabPanel>
                 </Tabs>
+
+                <Menu pagination className="AppSingle_Pagination">
+                  <Menu.Item name='1' active={activePagination === '1'} onClick={this.paginationClick} />
+                  <Menu.Item name='2' active={activePagination === '2'} onClick={this.paginationClick} />
+                  <Menu.Item name='3' active={activePagination === '3'} onClick={this.paginationClick} />
+                  <Menu.Item name='4' active={activePagination === '4'} onClick={this.paginationClick} />
+                  <Menu.Item name='5' active={activePagination === '5'} onClick={this.paginationClick} />
+                  <Menu.Item disabled>...</Menu.Item>
+                  <Menu.Item name='11' active={activePagination === '11'} onClick={this.paginationClick} />
+                  <Menu.Item name='12' active={activePagination === '12'} onClick={this.paginationClick} />
+                </Menu>
+
+
               </div>
 
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './ListApps.css';
 import AppIcon from '../img/appicon-sample.png';
 import Modal from 'react-modal';
+import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
 
 const customStyles = {
   content : {
@@ -48,7 +49,7 @@ class ListApps extends Component {
 
   render() {
     return(
-      <div>
+      <div className="listAppWrp">
         <div className="wrapper">
           <ul className="la-grid-wrp">
             <li>
@@ -77,6 +78,7 @@ class ListApps extends Component {
             </li>
           </ul>
 
+
           <button className="button-addApp" onClick={this.openModal}>+</button>
 
           <Modal
@@ -87,13 +89,25 @@ class ListApps extends Component {
           contentLabel="Example Modal"
         >
 
-          <button className="rmodal-close" onClick={this.closeModal}>close</button>
           <div className="listModal-inner">
-            <form onSubmit={this.handleSubmit}>
-              <input type="text" className="text-field" placeholder="Your App Name" />
-              <textarea className="text-area" placeholder="Small description about your App"></textarea>
-              <input type="submit" className="button-submit" value="create" />
-            </form>
+
+            <Form size='large' onSubmit={this.handleSubmit}>
+              <Segment stacked>
+                <Form.Input
+                  fluid
+                  icon='write'
+                  iconPosition='left'
+                  placeholder='App Name'
+                />
+                <Form.TextArea
+                  iconPosition='left'
+                  placeholder='Description..'
+                />
+                <Button primary>Create</Button>
+                <Button secondary onClick={this.closeModal}>Cancel</Button>
+                </Segment>
+            </Form>
+
           </div>
         </Modal>
 

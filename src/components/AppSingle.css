@@ -1,16 +1,6 @@
-.dash-left{
-  width: 20%;
-  height: 100%;
-  overflow-y: auto;
-  background: #212121;
-  float: left;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-}
+
 .dash-right{
-  width: 80%;
+  width: calc(100% - 15rem);
   height: 1000px;
   background: #f7f7f7;
   float: right;
@@ -19,7 +9,9 @@
 
 @media screen and (max-width: 991px) {
   .dash-left{ width:22%; }
-  .dash-right{ width:78%; }
+}
+@media screen and (max-width: 768px) {
+  .dash-right{ width:100%; }
 }
 
 .dash-left-in{
@@ -150,4 +142,8 @@ ul.as-appname li:first-child::before{
 .asPost-row h2{
   font-size: 18px;
   font-weight: bold;
+}
+
+.AppSingle_Pagination {
+  margin-top: 15px !important;
 }

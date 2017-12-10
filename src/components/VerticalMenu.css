@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px) {
+  .ui.vertical.menu {
+    width: 100%;
+    height: auto !important;
+    position: static !important;
+  }
+}
+
+.VerticalMenu_head {
+  width: 100%;
+  text-align: center;
+}
+
+.VerticalMenu_head img {
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 50%;
+  margin: 10px auto !important;
+}
+
+.ui.icon.header .content {
+  color: #ffffff;
+}

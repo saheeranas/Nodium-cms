@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './PostSingle.css';
-import AppIcon from '../img/appicon-sample.png';
+import { Menu, Button } from 'semantic-ui-react'
+import MenuExampleVertical from './VerticalMenu';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
@@ -28,22 +29,7 @@ class PostSingle extends Component {
       <div>
         <div className="wrapper">
 
-          <div className="dash-left">
-            <div className="dash-left-in">
-              <div className="as-icon-wrp">
-                <img src={AppIcon} alt="" />
-              </div>
-              <ul className="dash-menu">
-                <li>Settings</li>
-                <li>API Details</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-                <li>Item 6</li>
-                <li>Item 7</li>
-              </ul>
-            </div>
-          </div>
+          <MenuExampleVertical />
 
           <div className="dash-right">
             <div className="dash-right-in">
