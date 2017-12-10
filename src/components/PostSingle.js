@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './PostSingle.css';
-import { Menu, Button } from 'semantic-ui-react'
+import { Menu, Button, Input } from 'semantic-ui-react'
 import MenuExampleVertical from './VerticalMenu';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
@@ -37,7 +37,7 @@ class PostSingle extends Component {
             <form onSubmit={this.handleSubmit}>
 
              <div className="ps-row">
-               <input type="text" placeholder="Title" className="ps-field" />
+               <Input placeholder="Title" className="ps-field" />
              </div>
 
              <div className="ps-row">
@@ -45,7 +45,10 @@ class PostSingle extends Component {
                     onChange={this.handleChange} />
              </div>
 
-             <input type="submit" value="Post" />
+             <Button.Group>
+              <Button>Cancel</Button>
+              <Button positive>Post</Button>
+            </Button.Group>
 
             </form>
 

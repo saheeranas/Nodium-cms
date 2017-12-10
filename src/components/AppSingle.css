@@ -147,3 +147,12 @@ ul.as-appname li:first-child::before{
 .AppSingle_Pagination {
   margin-top: 15px !important;
 }
+
+@media screen and (max-width: 768px) {
+  .asPost-left {
+    width: 30%;
+  }
+  .asPost-right {
+    width: 70%;
+  }
+}

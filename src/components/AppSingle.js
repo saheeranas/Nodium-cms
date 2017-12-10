@@ -39,7 +39,7 @@ class AppSingle extends Component {
                   <li>App</li>
                   <li>App_Name_lorem</li>
                 </ul>
-                <button onClick={this.handleBtnNew} className="button-newPost">New</button>
+                <Button primary onClick={this.handleBtnNew} className="button-newPost">New</Button>
               </div>
 
               <div className="asTabs-wrp">
