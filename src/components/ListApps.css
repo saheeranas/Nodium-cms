@@ -1,8 +1,23 @@
 .listAppWrp {
   width: 100%;
-  height: 100%;
-  background: #f3f5f7;
   float: left;
+  padding: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .listAppWrp .ui.cards>.card {
+    width: calc(33.33% - 1.5em);
+  }
+}
+@media screen and (max-width: 768px) {
+  .listAppWrp .ui.cards>.card {
+    width: calc(50% - 1.5em);
+  }
+}
+@media screen and (max-width: 475px) {
+  .listAppWrp .ui.cards>.card {
+    width: calc(100% - 1.5em);
+  }
 }
 
 .button-addApp {
@@ -11,63 +26,26 @@
   height: 50px;
   right: 30px;
   bottom: 30px;
-  background: red;
-  font-size: 1.5em;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
   transition: all 0.3s ease;
 }
 
-.button-addApp:hover {
-  background: blue;
-}
 
-ul.la-grid-wrp {
-  list-style: none;
-  padding: 50px;
-  margin: 0;
-  float: left;
-  text-align: center;
-}
-
-ul.la-grid-wrp li {
-  display: inline-block;
-  width: 260px;
-  height: 320px;
-  margin: 25px;
-  padding: 20px;
-  background: #ffffff;
-  transition: all 0.3s ease;
-}
-
-ul.la-grid-wrp li:hover {
-  box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
-}
-
-ul.la-grid-wrp li img {
-  width: 64px;
-  height: 64px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-ul.la-grid-wrp li h3 {
+.ReactModal__Content{
+  background: none !important;
+  border: 0 !important;
 }
 
 .listModal-inner {
   width: 100%;
-  max-width: 400px;
+}
+
+@media screen and (min-width: 640px) {
+  .listModal-inner .ui.stacked.segment{
+    width: 600px;
+  }
 }
 
 
-.rmodal-close {
-  position: absolute;
-  top: 2px;
-  right: 2px;
+.ui.card>.extra, .ui.cards>.card>.extra a {
+  margin-right: 10px;
 }

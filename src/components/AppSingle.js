@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import './AppSingle.css';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Menu, Button } from 'semantic-ui-react'
+import { Menu, Button, Item } from 'semantic-ui-react'
 import MenuExampleVertical from './VerticalMenu';
+
+const description = [
+  'Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their',
+  'tiny stature, and even others for their massive size.',
+].join(' ')
 
 class AppSingle extends Component {
 
@@ -52,41 +57,54 @@ class AppSingle extends Component {
 
                     <div className="asPost-wrp">
 
-                      <div className="asPost-row">
-                        <div className="asPost-left"></div>
-                        <div className="asPost-right">
-                          <h2>Modernipsum dolor sit amet futurism realism</h2>
-                          <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                        </div>
-                      </div>
-                      <div className="asPost-row">
-                        <div className="asPost-left"></div>
-                        <div className="asPost-right">
-                          <h2>Modernipsum dolor sit amet futurism realism</h2>
-                          <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                        </div>
-                      </div>
-                      <div className="asPost-row">
-                        <div className="asPost-left"></div>
-                        <div className="asPost-right">
-                          <h2>Modernipsum dolor sit amet futurism realism</h2>
-                          <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                        </div>
-                      </div>
-                      <div className="asPost-row">
-                        <div className="asPost-left"></div>
-                        <div className="asPost-right">
-                          <h2>Modernipsum dolor sit amet futurism realism</h2>
-                          <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                        </div>
-                      </div>
-                      <div className="asPost-row">
-                        <div className="asPost-left"></div>
-                        <div className="asPost-right">
-                          <h2>Modernipsum dolor sit amet futurism realism</h2>
-                          <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                        </div>
-                      </div>
+                      <Item.Group divided>
+                        <Item>
+                          <Item.Image size='small' src='/img/image.png' />
+                          <Item.Content>
+                            <Item.Header as='a'>Cute Dog</Item.Header>
+                            <Item.Description>
+                              <p>{description}</p>
+                              <p>
+                                Many people also have their own barometers for what makes a cute dog.
+                              </p>
+                            </Item.Description>
+                          </Item.Content>
+                        </Item>
+
+                        <Item>
+                          <Item.Image size='small' src='/img/image.png' />
+                          <Item.Content>
+                            <Item.Header as='a'>Cute Dog</Item.Header>
+                            <Item.Description content={description} />
+                          </Item.Content>
+                        </Item>
+
+                        <Item>
+                          <Item.Image size='small' src='/img/image.png' />
+                          <Item.Content header='Cute Dog' description={description} />
+                        </Item>
+
+                        <Item>
+                          <Item.Image size='small' src='/img/image.png' />
+                          <Item.Content>
+                            <Item.Header as='a'>Cute Dog</Item.Header>
+                            <Item.Description>
+                              <p>{description}</p>
+                              <p>
+                                Many people also have their own barometers for what makes a cute dog.
+                              </p>
+                            </Item.Description>
+                          </Item.Content>
+                        </Item>
+
+                        <Item>
+                          <Item.Image size='small' src='/img/image.png' />
+                          <Item.Content>
+                            <Item.Header as='a'>Cute Dog</Item.Header>
+                            <Item.Description content={description} />
+                          </Item.Content>
+                        </Item>
+                      </Item.Group>
 
                     </div>
 
@@ -95,28 +113,33 @@ class AppSingle extends Component {
 
                       <div className="asPost-wrp">
 
-                        <div className="asPost-row">
-                          <div className="asPost-left"></div>
-                          <div className="asPost-right">
-                            <h2>Modernipsum dolor sit amet futurism realism</h2>
-                            <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                          </div>
-                        </div>
-                        <div className="asPost-row">
-                          <div className="asPost-left"></div>
-                          <div className="asPost-right">
-                            <h2>Modernipsum dolor sit amet futurism realism</h2>
-                            <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                          </div>
-                        </div>
-                        <div className="asPost-row">
-                          <div className="asPost-left"></div>
-                          <div className="asPost-right">
-                            <h2>Modernipsum dolor sit amet futurism realism</h2>
-                            <p>Modernipsum dolor sit amet futurism realism divisionism, lettrism lyrical abstraction neo-expressionism luminism realism. Nonconformism scuola romana neo-impressionism neoclassicism neo-expressionism neo-classicism installation art, illusionism stuckism neoclassicism nouveau realisme fluxus stuckism outsider art, rococo historicism video game art multiculturalism post-structuralism</p>
-                          </div>
-                        </div>
+                        <Item.Group divided>
+                          <Item>
+                            <Item.Image size='small' src='/img/image.png' />
+                            <Item.Content>
+                              <Item.Header as='a'>Cute Dog</Item.Header>
+                              <Item.Description>
+                                <p>{description}</p>
+                                <p>
+                                  Many people also have their own barometers for what makes a cute dog.
+                                </p>
+                              </Item.Description>
+                            </Item.Content>
+                          </Item>
 
+                          <Item>
+                            <Item.Image size='small' src='/img/image.png' />
+                            <Item.Content>
+                              <Item.Header as='a'>Cute Dog</Item.Header>
+                              <Item.Description content={description} />
+                            </Item.Content>
+                          </Item>
+
+                          <Item>
+                            <Item.Image size='small' src='/img/image.png' />
+                            <Item.Content header='Cute Dog' description={description} />
+                          </Item>
+                        </Item.Group>
 
                       </div>
 

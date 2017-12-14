@@ -122,26 +122,7 @@ ul.as-appname li:first-child::before{
 .asPost-wrp{
   width: 100%;
   float: left;
-}
-.asPost-row{
-  width: 100%;
-  float: left;
-  border: 1px solid #ccc;
-}
-.asPost-left{
-  width: 15%;
-  display: table-cell;
-  background: #aaa;
-}
-.asPost-right{
-  width: 85%;
-  display: table-cell;
-  padding: 15px;
-}
-
-.asPost-row h2{
-  font-size: 18px;
-  font-weight: bold;
+  padding: 15px 0;
 }
 
 .AppSingle_Pagination {

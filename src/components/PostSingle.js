@@ -45,7 +45,7 @@ class PostSingle extends Component {
                     onChange={this.handleChange} />
              </div>
 
-             <Button.Group>
+             <Button.Group floated='right'>
               <Button>Cancel</Button>
               <Button positive>Post</Button>
             </Button.Group>

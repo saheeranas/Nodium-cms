@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ListApps.css';
 import Modal from 'react-modal';
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react';
+import { Button, Form, Grid, Image, Message, Segment, Card, Icon } from 'semantic-ui-react';
 
 const customStyles = {
   content : {
@@ -50,35 +50,108 @@ class ListApps extends Component {
     return(
       <div className="listAppWrp">
         <div className="wrapper">
-          <ul className="la-grid-wrp">
-            <li>
-              <Image src='/img/appicon-sample.png' />
-              <h3>App name</h3>
-              <p>13 Posts</p>
-              <p>2 Drafts</p>
-            </li>
-            <li>
-              <Image src='/img/appicon-sample.png' />
-              <h3>App name</h3>
-              <p>13 Posts</p>
-              <p>2 Drafts</p>
-            </li>
-            <li>
-              <Image src='/img/appicon-sample.png' />
-              <h3>App name</h3>
-              <p>13 Posts</p>
-              <p>2 Drafts</p>
-            </li>
-            <li>
-              <Image src='/img/appicon-sample.png' />
-              <h3>App name</h3>
-              <p>13 Posts</p>
-              <p>2 Drafts</p>
-            </li>
-          </ul>
+
+        <Card.Group itemsPerRow={4}>
+
+          <Card>
+            <Image src='/img/appicon-sample.png' />
+            <Card.Content>
+              <Card.Header>App Name#1</Card.Header>
+              <Card.Meta>Last updated yesterday</Card.Meta>
+              <Card.Description>This App is a lorem ipsum in sit amet.</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Icon name='browser' />
+                13 Posts
+              </a>
+              <a>
+                <Icon name='edit' />
+                2 Drafts
+              </a>
+            </Card.Content>
+          </Card>
+
+          <Card>
+            <Image src='/img/appicon-sample.png' />
+            <Card.Content>
+              <Card.Header>App Name#2</Card.Header>
+              <Card.Meta>Last updated yesterday</Card.Meta>
+              <Card.Description>This App is a lorem ipsum in sit amet.</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Icon name='browser' />
+                13 Posts
+              </a>
+              <a>
+                <Icon name='edit' />
+                2 Drafts
+              </a>
+            </Card.Content>
+          </Card>
+
+          <Card>
+            <Image src='/img/appicon-sample.png' />
+            <Card.Content>
+              <Card.Header>App Name#3</Card.Header>
+              <Card.Meta>Last updated yesterday</Card.Meta>
+              <Card.Description>This App is a lorem ipsum in sit amet.</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Icon name='browser' />
+                13 Posts
+              </a>
+              <a>
+                <Icon name='edit' />
+                2 Drafts
+              </a>
+            </Card.Content>
+          </Card>
+
+          <Card>
+            <Image src='/img/appicon-sample.png' />
+            <Card.Content>
+              <Card.Header>App Name#4</Card.Header>
+              <Card.Meta>Last updated yesterday</Card.Meta>
+              <Card.Description>This App is a lorem ipsum in sit amet.</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Icon name='browser' />
+                13 Posts
+              </a>
+              <a>
+                <Icon name='edit' />
+                2 Drafts
+              </a>
+            </Card.Content>
+          </Card>
+
+          <Card>
+            <Image src='/img/appicon-sample.png' />
+            <Card.Content>
+              <Card.Header>App Name#5</Card.Header>
+              <Card.Meta>Last updated yesterday</Card.Meta>
+              <Card.Description>This App is a lorem ipsum in sit amet.</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+              <a>
+                <Icon name='browser' />
+                13 Posts
+              </a>
+              <a>
+                <Icon name='edit' />
+                2 Drafts
+              </a>
+            </Card.Content>
+          </Card>
+
+        </Card.Group>
 
 
-          <button className="button-addApp" onClick={this.openModal}>+</button>
+          <Button primary circular icon="plus" className="button-addApp" onClick={this.openModal} />
 
           <Modal
           isOpen={this.state.modalIsOpen}
@@ -102,9 +175,13 @@ class ListApps extends Component {
                   iconPosition='left'
                   placeholder='Description..'
                 />
-                <Button primary>Create</Button>
-                <Button secondary onClick={this.closeModal}>Cancel</Button>
-                </Segment>
+
+                <Button.Group widths='2'>
+                  <Button primary>Create</Button>
+                  <Button secondary onClick={this.closeModal}>Cancel</Button>
+                </Button.Group>
+
+              </Segment>
             </Form>
 
           </div>
