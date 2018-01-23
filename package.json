@@ -1,21 +1,37 @@
+
 {
-  "name": "nodium-cms",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-paginate": "^4.4.3",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.13",
-    "react-tabs": "^2.0.0",
-    "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.75.1"
+  "name": "example-create-react-app-express",
+  "version": "1.0.0",
+  "description":
+    "Example on using create-react-app with a Node Express Backend",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
   },
+  "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/saheeranas/nodium-cms.git"
+  },
+  "keywords": [
+    "\\"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saheeranas/nodium-cms/issues"
+  },
+  "homepage": "https://github.com/saheeranas/nodium-cms#readme"
 }

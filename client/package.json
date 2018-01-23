@@ -1,0 +1,26 @@
+{
+  "name": "nodium-cms",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-paginate": "^4.4.3",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.13",
+    "react-tabs": "^2.0.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.75.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
